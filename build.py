@@ -47,7 +47,12 @@ MD = markdown.Markdown(extensions=["extra", "sane_lists"])
 
 def md(text):
     MD.reset()
-    return Markup(responsive_images(MD.convert(str(text or ""))))
+    out = MD.convert(str(text or ""))
+    # Absätze, die nur ein Bild enthalten, werden zu Fotos; mehrere hintereinander zu einer Galerie
+    out = re.sub(r"<p>\s*(<img[^>]*>)\s*</p>", r'<figure class="ph1">\1</figure>', out)
+    out = re.sub(r"(?:<figure class=\"ph1\">.*?</figure>\s*){2,}",
+                 lambda m: '<div class="gallery">' + m.group(0) + "</div>", out, flags=re.S)
+    return Markup(responsive_images(out))
 
 
 def inline_md(text):

@@ -4,7 +4,7 @@ hero:
   kicker: Akagera Road · Kayonza · Rwanda
   heading: Free education, health care and nutrition for the children of Kayonza.
   text: Our kids are eager to learn, but many families cannot afford school. We run a free preschool and projects that support the whole community.
-  image: /images/children-laughing.webp
+  image: /images/children-laughing.jpg
   image_alt: Laughing children in green school uniforms
 stats:
   - { number: "2018", text: opened with 1 classroom, 15 children and 1 teacher }
@@ -41,11 +41,11 @@ sponsor:
 founder:
   heading: Founded in 2018 by Jean Claude “John” Habihirwe
   text: John grew up in Kayonza and had to leave school because his family couldn't pay. He started the foundation so that children from vulnerable families get the education he had to fight for.
-  image: /images/john.webp
+  image: /images/john.jpg
   image_alt: John Habihirwe, founder of the foundation
 visit:
   heading: Come and visit us!
-  image: /images/bike-at-fence.webp
+  image: /images/bike-at-fence.jpg
   image_alt: An orange mountain bike leaning on a fence beside the road
   offers:
     - { title: Local culture, text: "Traditional dance, cooking, banana beer" }

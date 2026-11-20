@@ -4,7 +4,7 @@ path: /about/
 menu_title: About
 description: How Jean Claude "John" Habihirwe went from dropping out of school to founding the Hirwa Children's Foundation in Kayonza, Rwanda.
 intro: Hirwa Children's Foundation opened in November 2018 with 1 classroom, 15 children and 1 teacher. This is the story of its founder.
-image: /images/john.webp
+image: /images/john.jpg
 image_alt: John Habihirwe, founder of the foundation
 ---
 ## Early life
@@ -36,3 +36,5 @@ And we do more than teach. Together with the whole community we tackle malnutrit
 I am grateful for the support that has shaped my life, and with God's grace I want to pass it on to the next generations.
 
 — Jean Claude "John" Habihirwe, founder
+
+![The sign of Hirwa Children's Foundation at Akagera Road](/images/school-sign.jpg)

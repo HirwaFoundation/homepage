@@ -4,6 +4,8 @@ path: /donate/items/
 description: Which items the Hirwa Children's Foundation needs, and how to bring or send them to Kayonza, Rwanda.
 intro: Donated items open doors for children and their families that would otherwise stay closed.
 ---
+![Donated school materials: books, crayons, games](/images/donated-school-materials.jpg)
+
 **Things we can always use:** school materials, clothing, hygiene products, toys, batteries and more.
 
 ## Bring them in person

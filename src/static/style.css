@@ -131,7 +131,11 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--orange);outline-of
 .prose h2{font-size:clamp(22px,2.6vw,28px);font-weight:700;margin:36px 0 10px}
 .prose p,.prose ul,.prose ol,.prose table,.prose blockquote{margin:0 0 16px}
 .prose li{margin-bottom:6px}
-.prose img{border-radius:14px;margin:28px 0}
+.prose figure{margin:28px 0}
+.prose figure img{border-radius:14px;max-width:min(100%,560px)}
+.prose .gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:28px 0}
+.prose .gallery figure{margin:0}
+.prose .gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;max-width:none}
 .prose table{border-collapse:collapse;width:100%;font-size:15px}
 .prose th,.prose td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
 .prose th{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2)}
@@ -187,5 +191,6 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--orange);outline-of
   .foot .cols > div:nth-child(-n+2){grid-column:1/-1}
   .foot a{overflow-wrap:anywhere}
   .price{font-size:44px}
+  .prose .gallery{grid-template-columns:1fr}
 }
 @media (prefers-reduced-motion: reduce){.pcard{transition:none}.pcard:hover{transform:none}}

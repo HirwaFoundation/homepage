@@ -4,6 +4,8 @@ path: /donate/
 description: Sponsor a child, donate money, give your time as a volunteer or send items to the Hirwa Children's Foundation in Rwanda.
 intro: Your money, your time and your gifts give the children of Kayonza hope and a better future. Choose what suits you.
 template: donate
+image: /images/children-group.jpg
+image_alt: A group of cheerful preschool children
 ways:
   - title: Sponsor a child
     text: 20 USD a month, paid once a year. Meet the children who are looking for a sponsor.

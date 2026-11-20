@@ -2,8 +2,8 @@
 title: Nutrition & Hen Project
 teaser: Lunch every school day. One hen, one egg a day for one child.
 order: 2
-cover: /images/lunch.webp
-cover_alt: Children eating lunch at the preschool
+cover: /images/porridge-cups.jpg
+cover_alt: Colourful cups of porridge for the preschool children
 ---
 In rural Rwanda, many children from the poorest families are malnourished. Malnutrition harms a child's physical and mental development, and with it their chance to learn. Too little food and too little variety are the main causes in our community.
 
@@ -15,3 +15,7 @@ One hen means one egg a day for one child: the daily protein a child needs and c
 
 - A **young hen costs 3 USD** and starts laying eggs after about 5 months.
 - A **mature hen costs 5 USD** and lays eggs right away.
+
+![A plate of lunch with a boiled egg](/images/lunch-with-egg.jpg)
+
+![The foundation's hens in their coop](/images/hens.jpg)

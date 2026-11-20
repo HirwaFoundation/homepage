@@ -2,8 +2,8 @@
 title: Adult Literacy
 teaser: Reading, writing and English classes for adults.
 order: 6
-badge: Aa · Ii
-badge_text: Kinyarwanda and English
+cover: /images/adult-class.jpg
+cover_alt: Adults in a literacy class at the foundation
 ---
 ## Kinyarwanda classes
 

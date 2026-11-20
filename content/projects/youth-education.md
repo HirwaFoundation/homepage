@@ -2,8 +2,8 @@
 title: Youth Education
 teaser: Free preschool for about 75 children, Monday to Friday.
 order: 1
-cover: /images/preschool-yard.webp
-cover_alt: Children playing in the yard of the preschool
+cover: /images/preschool-circle-outdoors.jpg
+cover_alt: Preschool children sitting in a circle on the grass with their teachers
 ---
 The Hirwa Children's Foundation's main mission is to give children living in poverty a free, high-quality education. We believe that education is the key to empowering our community, especially the poorest.
 
@@ -20,4 +20,6 @@ The children learn in two classes, with our two teachers and volunteers.
 | 10:00 – 11:30 | Lessons in maths, English or Kinyarwanda |
 | 11:30 – 12:00 | A nourishing lunch before the children go home |
 
-![The school building of the foundation](/images/school-building.webp)
+![Children in their classroom at Hirwa preschool](/images/classroom.jpg)
+
+![The preschool building with its turquoise walls and colourful chairs](/images/school-building.jpg)

@@ -3,8 +3,8 @@ title: Donate time
 path: /donate/time/
 description: Volunteer at the Hirwa Children's Foundation preschool in Kayonza, Rwanda.
 intro: Your energy and enthusiasm make a real difference for our students.
-image: /images/preschool-yard.webp
-image_alt: Children and a volunteer in the preschool yard
+image: /images/volunteer-with-child.jpg
+image_alt: A volunteer playing a learning game with a child
 ---
 As a volunteer you help our teachers, enrich the children's school day and support our mission. And you get to know the Rwandan way of life: cook with us, or come along to the local markets.
 

@@ -1,6 +1,50 @@
 {
-"bike-at-fence.webp:45478": {
-"h": 518,
+"adult-class.jpg:369960": {
+"h": 1201,
+"variants": [
+[
+400,
+"/img/adult-class-400.webp"
+],
+[
+640,
+"/img/adult-class-640.webp"
+],
+[
+960,
+"/img/adult-class-960.webp"
+],
+[
+1400,
+"/img/adult-class-1400.webp"
+]
+],
+"w": 1600
+},
+"banana-leaf-sandals.jpg:620934": {
+"h": 1201,
+"variants": [
+[
+400,
+"/img/banana-leaf-sandals-400.webp"
+],
+[
+640,
+"/img/banana-leaf-sandals-640.webp"
+],
+[
+960,
+"/img/banana-leaf-sandals-960.webp"
+],
+[
+1400,
+"/img/banana-leaf-sandals-1400.webp"
+]
+],
+"w": 1600
+},
+"bike-at-fence.jpg:409426": {
+"h": 1064,
 "variants": [
 [
 400,
@@ -9,22 +53,172 @@
 [
 640,
 "/img/bike-at-fence-640.webp"
+],
+[
+960,
+"/img/bike-at-fence-960.webp"
+],
+[
+1400,
+"/img/bike-at-fence-1400.webp"
 ]
 ],
-"w": 690
+"w": 1600
 },
-"children-laughing.webp:34810": {
-"h": 648,
+"campsite-night.jpg:193804": {
+"h": 1064,
+"variants": [
+[
+400,
+"/img/campsite-night-400.webp"
+],
+[
+640,
+"/img/campsite-night-640.webp"
+],
+[
+960,
+"/img/campsite-night-960.webp"
+],
+[
+1400,
+"/img/campsite-night-1400.webp"
+]
+],
+"w": 1600
+},
+"children-group.jpg:303378": {
+"h": 1162,
+"variants": [
+[
+400,
+"/img/children-group-400.webp"
+],
+[
+640,
+"/img/children-group-640.webp"
+],
+[
+960,
+"/img/children-group-960.webp"
+],
+[
+1400,
+"/img/children-group-1400.webp"
+]
+],
+"w": 1600
+},
+"children-laughing.jpg:177400": {
+"h": 1067,
 "variants": [
 [
 400,
 "/img/children-laughing-400.webp"
+],
+[
+640,
+"/img/children-laughing-640.webp"
 ]
 ],
-"w": 518
+"w": 853
 },
-"girls-outreach-2026.webp:35888": {
-"h": 518,
+"classroom.jpg:217250": {
+"h": 1067,
+"variants": [
+[
+400,
+"/img/classroom-400.webp"
+],
+[
+640,
+"/img/classroom-640.webp"
+],
+[
+960,
+"/img/classroom-960.webp"
+],
+[
+1400,
+"/img/classroom-1400.webp"
+]
+],
+"w": 1600
+},
+"cyclists-akagera.jpg:148391": {
+"h": 800,
+"variants": [
+[
+400,
+"/img/cyclists-akagera-400.webp"
+]
+],
+"w": 600
+},
+"donated-school-materials.jpg:387691": {
+"h": 1200,
+"variants": [
+[
+400,
+"/img/donated-school-materials-400.webp"
+],
+[
+640,
+"/img/donated-school-materials-640.webp"
+],
+[
+960,
+"/img/donated-school-materials-960.webp"
+],
+[
+1400,
+"/img/donated-school-materials-1400.webp"
+]
+],
+"w": 1600
+},
+"empower-her-banner.jpg:124801": {
+"h": 768,
+"variants": [
+[
+400,
+"/img/empower-her-banner-400.webp"
+],
+[
+640,
+"/img/empower-her-banner-640.webp"
+],
+[
+960,
+"/img/empower-her-banner-960.webp"
+]
+],
+"w": 1024
+},
+"gift-shop.jpg:230237": {
+"h": 1064,
+"variants": [
+[
+400,
+"/img/gift-shop-400.webp"
+],
+[
+640,
+"/img/gift-shop-640.webp"
+],
+[
+960,
+"/img/gift-shop-960.webp"
+],
+[
+1400,
+"/img/gift-shop-1400.webp"
+]
+],
+"w": 1600
+},
+"girls-outreach-2026.jpg:53451": {
+"h": 540,
 "variants": [
 [
 400,
@@ -35,48 +229,162 @@
 "/img/girls-outreach-2026-640.webp"
 ]
 ],
-"w": 690
+"w": 720
 },
-"john.webp:15344": {
-"h": 540,
+"hens.jpg:178407": {
+"h": 1195,
+"variants": [
+[
+400,
+"/img/hens-400.webp"
+],
+[
+640,
+"/img/hens-640.webp"
+],
+[
+960,
+"/img/hens-960.webp"
+],
+[
+1400,
+"/img/hens-1400.webp"
+]
+],
+"w": 1600
+},
+"john.jpg:103504": {
+"h": 853,
 "variants": [
 [
 400,
 "/img/john-400.webp"
-]
-],
-"w": 432
-},
-"lunch.webp:44328": {
-"h": 518,
-"variants": [
-[
-400,
-"/img/lunch-400.webp"
 ],
 [
 640,
-"/img/lunch-640.webp"
+"/img/john-640.webp"
 ]
 ],
-"w": 690
+"w": 682
 },
-"preschool-yard.webp:50192": {
-"h": 518,
+"local-food.jpg:157857": {
+"h": 945,
 "variants": [
 [
 400,
-"/img/preschool-yard-400.webp"
+"/img/local-food-400.webp"
 ],
 [
 640,
-"/img/preschool-yard-640.webp"
+"/img/local-food-640.webp"
 ]
 ],
-"w": 690
+"w": 709
 },
-"reusable-pads.webp:29734": {
-"h": 518,
+"lunch-with-egg.jpg:103466": {
+"h": 768,
+"variants": [
+[
+400,
+"/img/lunch-with-egg-400.webp"
+],
+[
+640,
+"/img/lunch-with-egg-640.webp"
+],
+[
+960,
+"/img/lunch-with-egg-960.webp"
+]
+],
+"w": 1024
+},
+"menstrual-hygiene-day-2025.jpg:154619": {
+"h": 768,
+"variants": [
+[
+400,
+"/img/menstrual-hygiene-day-2025-400.webp"
+],
+[
+640,
+"/img/menstrual-hygiene-day-2025-640.webp"
+],
+[
+960,
+"/img/menstrual-hygiene-day-2025-960.webp"
+]
+],
+"w": 1024
+},
+"mother-and-child.jpg:180231": {
+"h": 1064,
+"variants": [
+[
+400,
+"/img/mother-and-child-400.webp"
+],
+[
+640,
+"/img/mother-and-child-640.webp"
+],
+[
+960,
+"/img/mother-and-child-960.webp"
+],
+[
+1400,
+"/img/mother-and-child-1400.webp"
+]
+],
+"w": 1600
+},
+"porridge-cups.jpg:263601": {
+"h": 1201,
+"variants": [
+[
+400,
+"/img/porridge-cups-400.webp"
+],
+[
+640,
+"/img/porridge-cups-640.webp"
+],
+[
+960,
+"/img/porridge-cups-960.webp"
+],
+[
+1400,
+"/img/porridge-cups-1400.webp"
+]
+],
+"w": 1600
+},
+"preschool-circle-outdoors.jpg:536912": {
+"h": 1201,
+"variants": [
+[
+400,
+"/img/preschool-circle-outdoors-400.webp"
+],
+[
+640,
+"/img/preschool-circle-outdoors-640.webp"
+],
+[
+960,
+"/img/preschool-circle-outdoors-960.webp"
+],
+[
+1400,
+"/img/preschool-circle-outdoors-1400.webp"
+]
+],
+"w": 1600
+},
+"reusable-pads.jpg:287361": {
+"h": 1201,
 "variants": [
 [
 400,
@@ -85,12 +393,42 @@
 [
 640,
 "/img/reusable-pads-640.webp"
+],
+[
+960,
+"/img/reusable-pads-960.webp"
+],
+[
+1400,
+"/img/reusable-pads-1400.webp"
 ]
 ],
-"w": 690
+"w": 1600
 },
-"school-building.webp:33900": {
-"h": 518,
+"sandals-workshop.jpg:674908": {
+"h": 1201,
+"variants": [
+[
+400,
+"/img/sandals-workshop-400.webp"
+],
+[
+640,
+"/img/sandals-workshop-640.webp"
+],
+[
+960,
+"/img/sandals-workshop-960.webp"
+],
+[
+1400,
+"/img/sandals-workshop-1400.webp"
+]
+],
+"w": 1600
+},
+"school-building.jpg:282944": {
+"h": 1064,
 "variants": [
 [
 400,
@@ -99,22 +437,60 @@
 [
 640,
 "/img/school-building-640.webp"
+],
+[
+960,
+"/img/school-building-960.webp"
+],
+[
+1400,
+"/img/school-building-1400.webp"
 ]
 ],
-"w": 690
+"w": 1600
 },
-"young-mothers.webp:21146": {
-"h": 518,
+"school-sign.jpg:390295": {
+"h": 1201,
 "variants": [
 [
 400,
-"/img/young-mothers-400.webp"
+"/img/school-sign-400.webp"
 ],
 [
 640,
-"/img/young-mothers-640.webp"
+"/img/school-sign-640.webp"
+],
+[
+960,
+"/img/school-sign-960.webp"
+],
+[
+1400,
+"/img/school-sign-1400.webp"
 ]
 ],
-"w": 690
+"w": 1600
+},
+"volunteer-with-child.jpg:330659": {
+"h": 1200,
+"variants": [
+[
+400,
+"/img/volunteer-with-child-400.webp"
+],
+[
+640,
+"/img/volunteer-with-child-640.webp"
+],
+[
+960,
+"/img/volunteer-with-child-960.webp"
+],
+[
+1400,
+"/img/volunteer-with-child-1400.webp"
+]
+],
+"w": 1600
 }
 }

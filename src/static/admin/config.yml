@@ -1,0 +1,222 @@
+# Editor "Sveltia CMS" (erreichbar unter /admin). Doku: https://sveltiacms.app/en/docs
+app_title: Hirwa Children's Foundation
+logo:
+  src: /logo.png
+
+backend:
+  name: github
+  repo: HirwaFoundation/homepage
+  # Änderungen landen direkt auf main, also auf der Live-Seite
+  branch: main
+  # Login mit GitHub über den Cloudflare-Worker "sveltia-cms-auth" (Konto hirwa-dream)
+  base_url: https://sveltia-cms-auth.hirwa-dream.workers.dev
+  commit_messages:
+    create: "New: {{collection}} “{{slug}}”"
+    update: "Changed: {{collection}} “{{slug}}”"
+    delete: "Deleted: {{collection}} “{{slug}}”"
+    uploadMedia: "Photo uploaded: {{path}}"
+    deleteMedia: "Photo deleted: {{path}}"
+
+media_folder: images
+public_folder: /images
+media_libraries:
+  default:
+    config:
+      slugify_filename: true
+      # iPhone photos (HEIC) are converted on upload
+      transformations:
+        heic: { format: webp, quality: 88, width: 2400, height: 2400 }
+
+slug:
+  encoding: ascii
+  clean_accents: true
+
+output:
+  omit_empty_optional_fields: true
+
+collections:
+  - name: news
+    label: News
+    label_singular: News item
+    description: News and announcements. New items appear on the home page (latest 3) and under /news, 1–2 minutes after saving.
+    icon: newspaper
+    folder: content/news
+    extension: md
+    format: frontmatter
+    path: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: /news/{{slug}}/
+    summary: "{{date | date('YYYY-MM-DD')}} · {{title}}"
+    thumbnail: cover
+    sortable_fields: { fields: [title, date], default: { field: date, direction: descending } }
+    create: true
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: datetime, time_format: false, date_format: "YYYY-MM-DD", format: "YYYY-MM-DD" }
+      - { name: teaser, label: Short text for the card, widget: string, required: false }
+      - { name: cover, label: Photo, widget: image, required: false }
+      - { name: cover_alt, label: Photo description (for blind readers), widget: string, required: false }
+      - { name: badge, label: Text on coloured card (if no photo), widget: string, required: false }
+      - { name: draft, label: Draft (not visible), widget: boolean, default: false, required: false }
+      - { name: body, label: Text, widget: markdown }
+
+  - name: projects
+    label: Projects
+    label_singular: Project
+    icon: volunteer_activism
+    folder: content/projects
+    extension: md
+    format: frontmatter
+    preview_path: /projects/{{slug}}/
+    thumbnail: cover
+    sortable_fields: { fields: [order, title], default: { field: order, direction: ascending } }
+    create: true
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: teaser, label: Short text for the card, widget: string }
+      - { name: order, label: Position (1 = first), widget: number, value_type: int }
+      - { name: cover, label: Photo, widget: image, required: false }
+      - { name: cover_alt, label: Photo description, widget: string, required: false }
+      - { name: badge, label: Big text on coloured card (if no photo), widget: string, required: false }
+      - { name: badge_text, label: Small text on coloured card, widget: string, required: false }
+      - { name: draft, label: Draft (not visible), widget: boolean, default: false, required: false }
+      - { name: body, label: Text, widget: markdown }
+
+  - name: pages
+    label: Pages
+    label_singular: Page
+    icon: description
+    folder: content/pages
+    extension: md
+    format: frontmatter
+    create: false
+    delete: false
+    preview_path: "{{fields.path}}"
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: path, label: Address (do not change), widget: string, readonly: true }
+      - { name: description, label: Description for Google, widget: string, required: false }
+      - { name: intro, label: Intro text, widget: text, required: false }
+      - { name: image, label: Photo, widget: image, required: false }
+      - { name: image_alt, label: Photo description, widget: string, required: false }
+      - { name: template, label: Layout (do not change), widget: hidden, required: false }
+      - name: ways
+        label: Boxes (Donate page only)
+        widget: list
+        required: false
+        fields:
+          - { name: title, label: Title, widget: string }
+          - { name: text, label: Text, widget: string }
+          - { name: url, label: Link ("sponsor" = sponsorship site), widget: string }
+      - { name: body, label: Text, widget: markdown, required: false }
+
+  - name: site
+    label: Home page & settings
+    icon: settings
+    files:
+      - name: home
+        label: Home page
+        file: content/home.yml
+        fields:
+          - { name: title, label: Page title for Google, widget: string }
+          - name: hero
+            label: Top section
+            widget: object
+            fields:
+              - { name: kicker, label: Small line above, widget: string }
+              - { name: heading, label: Heading, widget: text }
+              - { name: text, label: Text, widget: text }
+              - { name: image, label: Photo, widget: image }
+              - { name: image_alt, label: Photo description, widget: string }
+          - name: stats
+            label: Numbers (green band)
+            widget: list
+            fields:
+              - { name: number, label: Number, widget: string }
+              - { name: text, label: Text, widget: string }
+          - name: mission
+            label: Mission
+            widget: object
+            fields:
+              - { name: kicker, label: Small line above, widget: string }
+              - { name: heading, label: Heading, widget: string }
+              - { name: text, label: Text, widget: markdown }
+          - name: day
+            label: A day at preschool
+            widget: object
+            fields:
+              - { name: heading, label: Heading, widget: string }
+              - name: items
+                label: Times
+                widget: list
+                fields:
+                  - { name: time, label: Time, widget: string }
+                  - { name: text, label: What happens, widget: string }
+          - name: sponsor
+            label: Sponsor a child box
+            widget: object
+            fields:
+              - { name: kicker, label: Small line above, widget: string }
+              - { name: heading, label: Heading, widget: string }
+              - { name: text, label: Text, widget: text }
+              - { name: price, label: Price, widget: string }
+              - { name: price_note, label: Next to price, widget: string }
+              - { name: covers, label: What it covers, widget: list }
+              - { name: button, label: Button text, widget: string }
+              - { name: note, label: Small print, widget: string }
+          - name: founder
+            label: Founder
+            widget: object
+            fields:
+              - { name: heading, label: Heading, widget: string }
+              - { name: text, label: Text, widget: text }
+              - { name: image, label: Photo, widget: image }
+              - { name: image_alt, label: Photo description, widget: string }
+          - name: visit
+            label: Community tourism
+            widget: object
+            fields:
+              - { name: heading, label: Heading, widget: string }
+              - { name: image, label: Photo, widget: image }
+              - { name: image_alt, label: Photo description, widget: string }
+              - name: offers
+                label: Offers
+                widget: list
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - { name: text, label: Text, widget: string }
+      - name: wishlist
+        label: Wishlist (what donations buy)
+        file: content/wishlist.yml
+        fields:
+          - name: items
+            label: Items
+            widget: list
+            summary: "{{price}} $ · {{title}}"
+            fields:
+              - { name: price, label: Price in USD, widget: number, value_type: float }
+              - { name: title, label: What, widget: string }
+              - { name: note, label: Small text, widget: string }
+              - { name: home, label: Show on home page, widget: boolean, default: false }
+      - name: settings
+        label: Settings (contact, menu, links)
+        file: content/settings.yml
+        fields:
+          - { name: name, label: Name, widget: string }
+          - { name: base_url, label: Website address, widget: string }
+          - { name: description, label: Description for Google, widget: text }
+          - { name: sponsor_url, label: Sponsorship site (Notion), widget: string }
+          - { name: sponsor_label, label: Sponsor button text, widget: string }
+          - { name: email, label: Email, widget: string }
+          - { name: phone, label: Phone, widget: string }
+          - { name: whatsapp, label: WhatsApp number (digits only), widget: string }
+          - { name: address, label: Address, widget: text }
+          - { name: map_url, label: Map link, widget: string }
+          - name: menu
+            label: Menu
+            widget: list
+            fields: [{ name: label, label: Text, widget: string }, { name: url, label: Link, widget: string }]
+          - name: social
+            label: Social media
+            widget: list
+            fields: [{ name: label, label: Name, widget: string }, { name: url, label: Link, widget: string }]
+          - { name: thanks, label: Thanks line in footer, widget: string }

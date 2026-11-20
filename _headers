@@ -1,0 +1,5 @@
+# Bilder und Schriften dürfen im Browser gespeichert bleiben (schnellere Folgebesuche).
+/img/*
+  Cache-Control: public, max-age=604800
+/fonts/*
+  Cache-Control: public, max-age=2592000

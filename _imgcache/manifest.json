@@ -1,0 +1,120 @@
+{
+"bike-at-fence.webp:45478": {
+"h": 518,
+"variants": [
+[
+400,
+"/img/bike-at-fence-400.webp"
+],
+[
+640,
+"/img/bike-at-fence-640.webp"
+]
+],
+"w": 690
+},
+"children-laughing.webp:34810": {
+"h": 648,
+"variants": [
+[
+400,
+"/img/children-laughing-400.webp"
+]
+],
+"w": 518
+},
+"girls-outreach-2026.webp:35888": {
+"h": 518,
+"variants": [
+[
+400,
+"/img/girls-outreach-2026-400.webp"
+],
+[
+640,
+"/img/girls-outreach-2026-640.webp"
+]
+],
+"w": 690
+},
+"john.webp:15344": {
+"h": 540,
+"variants": [
+[
+400,
+"/img/john-400.webp"
+]
+],
+"w": 432
+},
+"lunch.webp:44328": {
+"h": 518,
+"variants": [
+[
+400,
+"/img/lunch-400.webp"
+],
+[
+640,
+"/img/lunch-640.webp"
+]
+],
+"w": 690
+},
+"preschool-yard.webp:50192": {
+"h": 518,
+"variants": [
+[
+400,
+"/img/preschool-yard-400.webp"
+],
+[
+640,
+"/img/preschool-yard-640.webp"
+]
+],
+"w": 690
+},
+"reusable-pads.webp:29734": {
+"h": 518,
+"variants": [
+[
+400,
+"/img/reusable-pads-400.webp"
+],
+[
+640,
+"/img/reusable-pads-640.webp"
+]
+],
+"w": 690
+},
+"school-building.webp:33900": {
+"h": 518,
+"variants": [
+[
+400,
+"/img/school-building-400.webp"
+],
+[
+640,
+"/img/school-building-640.webp"
+]
+],
+"w": 690
+},
+"young-mothers.webp:21146": {
+"h": 518,
+"variants": [
+[
+400,
+"/img/young-mothers-400.webp"
+],
+[
+640,
+"/img/young-mothers-640.webp"
+]
+],
+"w": 690
+}
+}

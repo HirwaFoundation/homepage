@@ -1,0 +1,38 @@
+{% macro link(url) %}{{ site.sponsor_url if url == "sponsor" else url }}{% endmacro %}
+
+{% macro pcard(p) %}
+<a class="pcard" href="{{ p.url }}">
+  {% if p.cover %}<div class="ph">{{ img(p.cover, p.cover_alt, sizes="(max-width: 760px) 100vw, 340px") }}</div>
+  {% else %}<div class="ph solid s{{ (p.order or 0) % 2 }}"><div><b>{{ p.badge }}</b><span>{{ p.badge_text }}</span></div></div>{% endif %}
+  <div class="tx"><h3>{{ p.title }}</h3><p>{{ p.teaser }}</p></div>
+</a>
+{% endmacro %}
+
+{% macro ncard(n) %}
+<a class="ncard" href="{{ n.url }}">
+  {% if n.cover %}<div class="ph">{{ img(n.cover, n.cover_alt, sizes="(max-width: 760px) 100vw, 340px") }}</div>
+  {% else %}<div class="ph badge">{{ n.badge or n.title }}</div>{% endif %}
+  <time datetime="{{ n.date }}">{{ n.date | nice_date }}</time>
+  <h3>{{ n.title }}</h3>
+  {% if n.teaser %}<p>{{ n.teaser }}</p>{% endif %}
+</a>
+{% endmacro %}
+
+{% macro wl(items, only_home=false) %}
+<div class="wishlist">
+  {% for w in items if (w.home or not only_home) %}
+  <div class="wl"><b>{{ w.price | price }} $</b><span>{{ w.title }}<small>{{ w.note }}</small></span></div>
+  {% endfor %}
+</div>
+{% endmacro %}
+
+{% macro pagehead(page, kicker=None) %}
+<section class="phead"><div class="in{% if page.image %} with-img{% endif %}">
+  <div>
+    {% if kicker %}<span class="kicker">{{ kicker }}</span>{% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.intro %}<p class="intro">{{ page.intro }}</p>{% endif %}
+  </div>
+  {% if page.image %}<figure class="framed">{{ img(page.image, page.image_alt, sizes="(max-width: 760px) 90vw, 360px", eager=true) }}</figure>{% endif %}
+</div></section>
+{% endmacro %}

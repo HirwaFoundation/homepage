@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% from "macros.html" import pcard with context %}
+{% block main %}
+<section class="phead"><div class="in"><div>
+  <span class="kicker">Welcome to Kariyeri</span>
+  <h1>Our projects</h1>
+  <p class="intro">Life in our village revolves around farming and community. There is no electricity and no running water. In the dry season children carry water home, often several kilometres, several times a day. Many families don't have enough food or any health care. Our projects tackle these roots of hardship, with the children and their education at the centre.</p>
+</div></div></section>
+<section class="projects"><div class="in"><div class="pgrid">{% for p in projects %}{{ pcard(p) }}{% endfor %}</div></div></section>
+{% endblock %}

@@ -1,0 +1,54 @@
+# Startseite. Im Editor unter „Startseite“.
+title: Free preschool, food and health care for the children of Kayonza
+hero:
+  kicker: Akagera Road · Kayonza · Rwanda
+  heading: Free education, health care and nutrition for the children of Kayonza.
+  text: Our kids are eager to learn, but many families cannot afford school. We run a free preschool and projects that support the whole community.
+  image: /images/children-laughing.webp
+  image_alt: Laughing children in green school uniforms
+stats:
+  - { number: "2018", text: opened with 1 classroom, 15 children and 1 teacher }
+  - { number: "~75", text: children aged 3–6 in our preschool }
+  - { number: "78", text: people with health insurance }
+  - { number: "600", text: pairs of sandals made by mothers each month }
+mission:
+  kicker: Our mission
+  heading: Children here fetch water instead of going to school.
+  text: |-
+    Many families cannot afford to send their children to school. Instead the children walk long distances for drinking water, and in farming season they help in the fields. This leads to high rates of illiteracy.
+
+    We give children a free, good education and what they need to focus on learning. And we support the adults with projects of their own, so the whole community moves forward.
+day:
+  heading: A day at Hirwa preschool
+  items:
+    - { time: "08:00", text: "Playing in the yard, songs and prayers" }
+    - { time: "09:00", text: "Small-group learning through games" }
+    - { time: "10:00", text: "Maths, English or Kinyarwanda" }
+    - { time: "11:30", text: "Lunch before going home" }
+sponsor:
+  kicker: Sponsor a child · DREAM programme
+  heading: Keep a child's dream alive.
+  text: Our preschool gets no government money. Sponsorship lets a child come to school regularly and move on to primary school. Meet the children who are looking for a sponsor and read how it works.
+  price: 20 USD
+  price_note: a month
+  covers:
+    - School fees and school costs
+    - Learning materials
+    - Basic health care
+    - Daily needs, so the child can stay in school
+  button: Meet the children
+  note: Paid once a year (240 USD). Shared sponsorships are welcome.
+founder:
+  heading: Founded in 2018 by Jean Claude “John” Habihirwe
+  text: John grew up in Kayonza and had to leave school because his family couldn't pay. He started the foundation so that children from vulnerable families get the education he had to fight for.
+  image: /images/john.webp
+  image_alt: John Habihirwe, founder of the foundation
+visit:
+  heading: Come and visit us!
+  image: /images/bike-at-fence.webp
+  image_alt: An orange mountain bike leaning on a fence beside the road
+  offers:
+    - { title: Local culture, text: "Traditional dance, cooking, banana beer" }
+    - { title: Guided tours, text: "Biking or hiking, short or several days" }
+    - { title: School & gift shop, text: "Meet the kids, buy handmade crafts" }
+    - { title: Bike & gear rental, text: "On your way to Akagera Park" }

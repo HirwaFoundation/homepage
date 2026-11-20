@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% from "macros.html" import pagehead with context %}
+{% block main %}
+{{ pagehead(page) }}
+<section class="body"><div class="in"><div class="prose">{{ page.body }}</div></div></section>
+{% block after %}{% endblock %}
+{% endblock %}

@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% from "macros.html" import ncard with context %}
+{% block main %}
+<section class="phead"><div class="in"><div><h1>News</h1></div></div></section>
+<section class="news plain"><div class="in"><div class="ngrid">{% for n in items %}{{ ncard(n) }}{% endfor %}</div></div></section>
+{% endblock %}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if title %}{{ title }} · {% endif %}{{ site.name }}</title>
+<meta name="description" content="{{ description or site.description }}">
+<link rel="canonical" href="{{ site.base_url }}{{ page_url }}">
+<meta property="og:title" content="{{ title or site.name }}">
+<meta property="og:description" content="{{ description or site.description }}">
+<meta property="og:type" content="website">
+<link rel="preload" href="/fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#fbfaf7">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="head"><div class="in">
+  <a class="brand" href="/"><img src="/logo.png" alt="" width="216" height="230"><b>Hirwa Children's<small>Foundation</small></b></a>
+  <nav class="nav" aria-label="Main">
+    {% for m in site.menu %}<a href="{{ m.url }}"{% if page_url.startswith(m.url) %} aria-current="page"{% endif %}>{{ m.label }}</a>{% endfor %}
+    <a class="btn" href="{{ site.sponsor_url }}">{{ site.sponsor_label }} <span aria-hidden="true">↗</span></a>
+  </nav>
+  <details class="menu">
+    <summary aria-label="Menu"><i></i></summary>
+    <nav aria-label="Main (mobile)">
+      {% for m in site.menu %}<a href="{{ m.url }}"{% if page_url.startswith(m.url) %} aria-current="page"{% endif %}>{{ m.label }}</a>{% endfor %}
+      <a class="btn" href="{{ site.sponsor_url }}">{{ site.sponsor_label }} <span aria-hidden="true">↗</span></a>
+    </nav>
+  </details>
+</div></header>
+<main id="main">
+{% block main %}{% endblock %}
+</main>
+<footer class="foot"><div class="in">
+  <div class="cols">
+    <div><h2>{{ site.name }}</h2><p>{{ site.address | replace("\n", "<br>"|safe) }}</p><p><a href="{{ site.map_url }}">Open the map</a></p></div>
+    <div><h2>Contact</h2><a href="mailto:{{ site.email }}">{{ site.email }}</a><a href="https://wa.me/{{ site.whatsapp }}">{{ site.phone }} (WhatsApp)</a></div>
+    <div><h2>Follow us</h2>{% for s in site.social %}<a href="{{ s.url }}">{{ s.label }}</a>{% endfor %}</div>
+    <div><h2>Donate</h2><a href="{{ site.sponsor_url }}">{{ site.sponsor_label }} ↗</a><a href="/donate/money/">Money</a><a href="/donate/time/">Time</a><a href="/donate/items/">Items</a></div>
+  </div>
+  <div class="legal"><span>© 2018–{{ year }} {{ site.name }}</span><span>{{ site.thanks }}</span></div>
+</div></footer>
+</body>
+</html>

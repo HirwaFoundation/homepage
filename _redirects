@@ -1,0 +1,25 @@
+# Alte Wix-Adressen auf die neuen Seiten umleiten
+/home                                       /                           301
+/history                                    /about/                     301
+/get-involved                               /donate/                    301
+/general-7                                  https://sponsor-hirwa-dream.super.site/ 301
+/pricing-plans/list                         https://sponsor-hirwa-dream.super.site/ 301
+/product-page/sponsor-a-chield              https://sponsor-hirwa-dream.super.site/ 301
+/product-page/sponsor-a-child-2-terms       https://sponsor-hirwa-dream.super.site/ 301
+/product-page/sponsor-a-child-3-terms       https://sponsor-hirwa-dream.super.site/ 301
+/about-7                                    /donate/money/              301
+/product-page/*                             /donate/money/              301
+/category/*                                 /donate/money/              301
+/copy-of-financial-support                  /donate/time/               301
+/copy-of-donate-your-time                   /donate/items/              301
+/programs                                   /projects/                  301
+/about-6                                    /projects/youth-education/  301
+/copy-of-young-mothers-skills-training-1    /projects/health-insurance/ 301
+/copy-of-youth-education                    /projects/adult-literacy/   301
+/copy-of-adult-literacy-program             /projects/nutrition/        301
+/copy-of-young-mothers-skills-training      /projects/menstrual-products/ 301
+/copy-of-nutrition-program                  /projects/young-mothers/    301
+/exprience                                  /community-tourism/         301
+/gallery                                    /                           301
+/donation-thank-you-page                    /donate/                    301
+/paywall                                    /                           301

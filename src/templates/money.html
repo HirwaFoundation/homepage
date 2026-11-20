@@ -1,0 +1,9 @@
+{% extends "page.html" %}
+{% from "macros.html" import wl with context %}
+{% block after %}
+<section class="wish"><div class="in">
+  <div class="sec-h"><div><span class="kicker">Wishlist</span><h2>What your donation buys</h2></div></div>
+  {{ wl(wishlist) }}
+  <p class="aside">Want to support one child for a whole year? <a href="{{ site.sponsor_url }}">Sponsor a child ↗</a></p>
+</div></section>
+{% endblock %}

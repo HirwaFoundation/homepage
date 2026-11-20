@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block main %}
+<section class="phead"><div class="in{% if page.cover %} with-img{% endif %}">
+  <div><a class="kicker" href="/news/">News · {{ page.date | nice_date }}</a><h1>{{ page.title }}</h1></div>
+  {% if page.cover %}<figure class="framed">{{ img(page.cover, page.cover_alt, sizes="(max-width: 760px) 90vw, 360px", eager=true) }}</figure>{% endif %}
+</div></section>
+<section class="body"><div class="in"><div class="prose">{{ page.body }}</div></div></section>
+{% endblock %}

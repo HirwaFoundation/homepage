@@ -1,0 +1,27 @@
+# Allgemeine Einstellungen (Name, Kontakt, Menü). Im Editor unter „Einstellungen“.
+name: Hirwa Children's Foundation
+base_url: https://hirwafoundation.org
+description: Hirwa Children's Foundation is a nonprofit in Kayonza, Rwanda, that gives children from poor families free preschool education, health care and food.
+sponsor_url: https://sponsor-hirwa-dream.super.site/
+sponsor_label: Sponsor a child
+email: hirwachildrenfoundation@gmail.com
+phone: "+250 782 575 855"
+whatsapp: "250782575855"
+address: |-
+  Akagera Road, KM 21
+  Kayonza, Eastern Province
+  Rwanda
+map_url: https://maps.app.goo.gl/wWhxXjkbhT6WmpMGA
+menu:
+  - { label: About, url: /about/ }
+  - { label: Donate, url: /donate/ }
+  - { label: Projects, url: /projects/ }
+  - { label: Community Tourism, url: /community-tourism/ }
+  - { label: News, url: /news/ }
+  - { label: Contact, url: /contact/ }
+social:
+  - { label: Instagram, url: "https://www.instagram.com/hirwachildrenfoundation/" }
+  - { label: Facebook, url: "https://www.facebook.com/Hirwafoundation" }
+  - { label: YouTube, url: "https://www.youtube.com/channel/UC-KTjk1vrs-GeZAqDAFpVwA" }
+  - { label: LinkedIn, url: "https://www.linkedin.com/company/hirwa-children-s-foundation/" }
+thanks: Thanks to Mantis Collection, IMIGONGO Partners and TUI Care Foundation

@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% from "macros.html" import pcard, ncard, wl with context %}
+{% block main %}
+<section class="hero"><div class="in">
+  <div>
+    <span class="kicker">{{ home.hero.kicker }}</span>
+    <h1>{{ home.hero.heading }}</h1>
+    <p>{{ home.hero.text }}</p>
+    <div class="ctas"><a class="btn" href="{{ site.sponsor_url }}">{{ site.sponsor_label }} <span aria-hidden="true">↗</span></a><a class="tlink" href="/projects/">See our projects</a></div>
+  </div>
+  <figure class="framed">{{ img(home.hero.image, home.hero.image_alt, sizes="(max-width: 760px) 90vw, 360px", eager=true) }}</figure>
+</div></section>
+
+<section class="stats" aria-label="In numbers"><div class="in">
+  {% for s in home.stats %}<div class="stat"><b>{{ s.number }}</b><span>{{ s.text }}</span></div>{% endfor %}
+</div></section>
+
+<section class="why"><div class="in">
+  <div>
+    <span class="kicker">{{ home.mission.kicker }}</span>
+    <h2>{{ home.mission.heading }}</h2>
+    <div class="prose">{{ home.mission.text | md }}</div>
+  </div>
+  <div class="daylist">
+    <h3>{{ home.day.heading }}</h3>
+    <ol>{% for d in home.day['items'] %}<li><time>{{ d.time }}</time>{{ d.text }}</li>{% endfor %}</ol>
+  </div>
+</div></section>
+
+<section class="projects"><div class="in">
+  <div class="sec-h"><div><span class="kicker">Projects</span><h2>Our projects</h2></div><a href="/projects/">All projects</a></div>
+  <div class="pgrid">{% for p in projects %}{{ pcard(p) }}{% endfor %}</div>
+</div></section>
+
+<section class="sponsor"><div class="in">
+  <div>
+    <span class="kicker">{{ home.sponsor.kicker }}</span>
+    <h2>{{ home.sponsor.heading }}</h2>
+    <p>{{ home.sponsor.text }}</p>
+  </div>
+  <div class="ticket">
+    <div class="price">{{ home.sponsor.price }} <small>{{ home.sponsor.price_note }}</small></div>
+    <ul>{% for c in home.sponsor.covers %}<li>{{ c }}</li>{% endfor %}</ul>
+    <a class="btn dark" href="{{ site.sponsor_url }}">{{ home.sponsor.button }} <span aria-hidden="true">↗</span></a>
+    <p class="note">{{ home.sponsor.note }}</p>
+  </div>
+</div></section>
+
+<section class="wish"><div class="in">
+  <div class="sec-h"><div><span class="kicker">Donate money</span><h2>What your donation buys</h2></div><a href="/donate/money/">How to donate</a></div>
+  {{ wl(wishlist, only_home=true) }}
+</div></section>
+
+<section class="founder"><div class="in">
+  {{ img(home.founder.image, home.founder.image_alt, sizes="220px") }}
+  <div>
+    <span class="kicker">About</span>
+    <h2>{{ home.founder.heading }}</h2>
+    <p>{{ home.founder.text }}</p>
+    <p><a href="/about/">Read our story</a></p>
+  </div>
+</div></section>
+
+<section class="visit"><div class="in">
+  <figure>{{ img(home.visit.image, home.visit.image_alt, sizes="(max-width: 760px) 100vw, 380px") }}</figure>
+  <div>
+    <span class="kicker">Community Tourism</span>
+    <h2>{{ home.visit.heading }}</h2>
+    <div class="offers">{% for o in home.visit.offers %}<div><b>{{ o.title }}</b>{{ o.text }}</div>{% endfor %}</div>
+    <a class="btn" href="/community-tourism/">Plan your visit</a>
+  </div>
+</div></section>
+
+{% if news %}
+<section class="news"><div class="in">
+  <div class="sec-h"><div><span class="kicker">News</span><h2>Latest news</h2></div><a href="/news/">All news</a></div>
+  <div class="ngrid">{% for n in news %}{{ ncard(n) }}{% endfor %}</div>
+</div></section>
+{% endif %}
+{% endblock %}

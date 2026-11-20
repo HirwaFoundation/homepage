@@ -1,0 +1,13 @@
+# Was mit Spenden gekauft wird. Erscheint auf der Startseite (Einträge mit „Startseite“ an) und vollständig auf /donate/money.
+items:
+  - { price: 1.5, title: A breakfast, note: "for one child, one school day", home: false }
+  - { price: 3, title: A young hen, note: "lays an egg a day after 5 months", home: true }
+  - { price: 5, title: A mature hen, note: "lays eggs right away", home: false }
+  - { price: 7, title: A school uniform, note: "made by women in the village", home: true }
+  - { price: 10, title: A week of drinking water, note: "for all our children; there is no piped water", home: true }
+  - { price: 17, title: Paint for the classrooms, note: "rooms and outside walls", home: true }
+  - { price: 25, title: Christmas gifts, note: "a small gift for 5 children", home: false }
+  - { price: 50, title: School materials for a term, note: "books, pencils, crayons, games", home: false }
+  - { price: 50, title: A birthday party, note: "every 3 months, for all the children", home: false }
+  - { price: 270, title: A solar battery, note: "12 V / 100 Ah, for evening classes", home: true }
+  - { price: 300, title: "A 5,000 L rainwater tank", note: "for toilets, showers and kitchen", home: true }

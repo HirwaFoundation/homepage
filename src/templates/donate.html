@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% from "macros.html" import pagehead, link with context %}
+{% block main %}
+{{ pagehead(page) }}
+<section class="body"><div class="in">
+  <div class="ways">
+    {% for w in page.ways %}
+    <a class="way{% if loop.first %} first{% endif %}" href="{{ link(w.url) }}"><h2>{{ w.title }}{% if w.url == "sponsor" %} <span aria-hidden="true">↗</span>{% endif %}</h2><p>{{ w.text }}</p></a>
+    {% endfor %}
+  </div>
+  <div class="prose">{{ page.body }}</div>
+</div></section>
+{% endblock %}
